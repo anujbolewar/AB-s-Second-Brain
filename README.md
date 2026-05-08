@@ -44,6 +44,16 @@ To make the invisible semantic connections visible, I wrote a graph script. It a
 
 Right now, the index is tiny: 5 notes, 12 chunks, and a 1.7 MB database. That's intentional. I built the infrastructure first to ensure the retrieval mechanics and MCP boundaries are solid before dumping years of notes into it.
 
+## The Interface
+
+While Claude handles the retrieval and synthesis, Obsidian acts as the visual frontend. The semantic graph script takes the invisible vector relationships from ChromaDB and writes them back into the files as frontmatter wikilinks.
+
+![Obsidian Graph View](images/obs1.png)
+
+This creates a self-reinforcing loop. The AI uses the embeddings to answer questions, and I use the resulting graph view to explore how my ideas connect visually.
+
+![Obsidian Interface](images/obs2.png)
+
 ## Setup
 
 Ensure Ollama is running locally with the embedding model pulled (`ollama pull mxbai-embed-large`). 
