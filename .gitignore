@@ -1,0 +1,20 @@
+# Exclude actual notes (Keep these private!)
+01-Projects/
+02-Knowledge/
+03-Memory/
+04-Context/
+05-Daily/
+06-AI-Memory/
+
+# Exclude system data
+.indexes/
+embeddings/
+__pycache__/
+.DS_Store
+.obsidian/
+secondbrain/
+
+# Keep the system structure and scripts
+!scripts/
+!00-Core/
+!README.md
